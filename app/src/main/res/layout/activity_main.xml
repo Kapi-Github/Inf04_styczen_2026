@@ -13,27 +13,19 @@
         android:id="@+id/questionImage"
         android:layout_width="match_parent"
         android:layout_height="350dp"
+        android:layout_marginVertical="20dp"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
-        android:layout_marginVertical="20dp" />
-
-    <TextView
-        android:id="@+id/questionTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pytanie 1"
-        android:textSize="25sp"
-        android:layout_margin="10dp"
-        android:textColor="#FF8A80"/>
+        app:srcCompat="@drawable/zad1" />
 
     <TextView
         android:id="@+id/questionContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Jakie zwierze jest na zdjęciu?"
-        android:textSize="20sp"
         android:layout_margin="10dp"
-        android:textStyle="bold"/>
+        android:text="Które to schronisko?"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <RadioGroup
         android:id="@+id/questionAnswers"
@@ -44,25 +36,26 @@
             android:id="@+id/answerA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pies"/>
+            android:text="Na rysiance." />
 
         <RadioButton
             android:id="@+id/answerB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Krowa"/>
+            android:text="Na wielkiej Raczy." />
 
         <RadioButton
             android:id="@+id/answerC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kajtek"/>
+            android:text="Na Wielkiej Ryczerzowej." />
     </RadioGroup>
+
     <Button
-        android:id="@+id/ok_button"
+        android:id="@+id/nextBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Zatwierdź"
         android:layout_gravity="center"
-        android:backgroundTint="#8C9EFF"/>
+        android:backgroundTint="#8C9EFF"
+        android:text="Dalej" />
 </LinearLayout>
